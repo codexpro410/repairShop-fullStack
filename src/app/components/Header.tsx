@@ -1,7 +1,7 @@
 "use client";
 import Link from "next/link";
 import NavButton from "./NavButton";
-import { CarIcon, File, HomeIcon, LogOut, UsersRound } from "lucide-react";
+import { CarIcon, File, HomeIcon, LogOut, Mail, UsersRound } from "lucide-react";
 import { ModeToggle } from "./ModeToggle";
 import { Button } from "./ui/button";
 import { LogoutLink } from "@kinde-oss/kinde-auth-nextjs";
@@ -25,7 +25,7 @@ export default function Header() {
               {title:"New Customers", href:"/customers/form"},
               ]}/>
 
-            {/* <NavButton href="/sentry-example-page" label="sentry-example-page" icon={CarIcon} /> */}
+            <NavButton href="/contact" label="contact-us-page" icon={Mail} />
             
             <ModeToggle/>
 

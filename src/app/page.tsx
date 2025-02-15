@@ -22,12 +22,6 @@ export default function Home() {
       {/* Call-to-Action Buttons */}
       <div className="flex flex-col items-center space-y-2">
         <Link
-          href="/contact"
-          className="bg-blue-600 text-white px-6 py-2 rounded-lg hover:bg-blue-700 transition-colors"
-        >
-          Contact Us
-        </Link>
-        <Link
           href="/home"
           className="text-green-600 hover:underline transition-colors"
         >

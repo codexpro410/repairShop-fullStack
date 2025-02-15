@@ -7,10 +7,10 @@ import { Button } from "@/app/components/ui/button";
 import { MapPin, Phone, Mail, Clock } from "lucide-react"
 import { Card, CardContent, CardHeader, CardTitle } from "@/app/components/ui/card";
 const featuredProducts = [
-  { id: 1, name: "Gaming PC", price: "$1299", image: "https://cdn.komponentko.si/wp-content/uploads/ella-don-JomkRNkzKhE-unsplash1.jpg" },
-  { id: 2, name: "Ultra-thin Laptop", price: "$999", image: "https://cdn.mos.cms.futurecdn.net/8BHQFHBNDTS7hwEbVbnMGZ.jpg" },
-  { id: 3, name: "4K Monitor", price: "$499", image: "https://i.redd.it/zh85fc8267gc1.jpeg" },
-  { id: 4, name: "Mechanical Keyboard", price: "$129", image: "https://i.ytimg.com/vi/RCOEIGW53GU/maxresdefault.jpg" },
+  { id: 1, name: "Gaming PC", price: "$1299", image: "images/pc.webp" },
+  { id: 2, name: "Ultra-thin Laptop", price: "$999", image: "images/labtop.jpg" },
+  { id: 3, name: "4K Monitor", price: "$499", image: "images/monitor.png" },
+  { id: 4, name: "Mechanical Keyboard", price: "$129", image: "images/keyboard.jpg" },
 ]
 
 const services = [
@@ -52,9 +52,9 @@ export default function Home() {
       <section id="featured-products" className="w-full py-16 bg-gray-100">
         <div className="container mx-auto">
           <h2 className="text-3xl font-bold text-center mb-10">Featured Products</h2>
-          <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-6">
+          <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-6 px-2">
             {featuredProducts.map((product) => (
-              <Card key={product.id}>
+              <Card key={product.id} className="hover:bg-gray-500">
                 <CardHeader>
                   <Image
                     src={product.image || "/placeholder.svg"}
@@ -97,7 +97,7 @@ export default function Home() {
       </section>
 
       {/* Contact/Location Section */}
-      <section className="w-full py-16 bg-gray-800 text-white">
+      <section className="w-full py-16  text-white">
         <div className="container mx-auto">
           <h2 className="text-3xl font-bold text-center mb-10">Visit Us</h2>
           <div className="grid grid-cols-1 md:grid-cols-2 gap-8">

@@ -7,10 +7,10 @@ import { Button } from "@/app/components/ui/button";
 import { MapPin, Phone, Mail, Clock } from "lucide-react"
 import { Card, CardContent, CardHeader, CardTitle } from "@/app/components/ui/card";
 const featuredProducts = [
-  { id: 1, name: "Gaming PC", price: "$1299", image: "./images/pc.webp" },
-  { id: 2, name: "Ultra-thin Laptop", price: "$999", image: "./images/labtop.jpg" },
-  { id: 3, name: "4K Monitor", price: "$499", image: "./images/monitor.png" },
-  { id: 4, name: "Mechanical Keyboard", price: "$129", image: "./images/keyboard.jpg" },
+  { id: 1, name: "Gaming PC", price: "$1299", image: "/images/pc.webp" },
+  { id: 2, name: "Ultra-thin Laptop", price: "$999", image: "/images/labtop.jpg" },
+  { id: 3, name: "4K Monitor", price: "$499", image: "/images/monitor.png" },
+  { id: 4, name: "Mechanical Keyboard", price: "$129", image: "/images/keyboard.jpg" },
 ]
 
 const services = [

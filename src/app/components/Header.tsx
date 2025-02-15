@@ -25,7 +25,7 @@ export default function Header() {
               {title:"New Customers", href:"/customers/form"},
               ]}/>
 
-            <NavButton href="/sentry-example-page" label="sentry-example-page" icon={CarIcon} />
+            {/* <NavButton href="/sentry-example-page" label="sentry-example-page" icon={CarIcon} /> */}
             
             <ModeToggle/>
 

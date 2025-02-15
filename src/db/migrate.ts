@@ -6,9 +6,9 @@ const main = async() => {
         await migrate(db, {
             migrationsFolder: "src/db/migrations",
         })
-        console.log("Migration complete")
+        // console.log("Migration complete")
     } catch (error) {
-        console.error("Migration failed",error)
+        // console.error("Migration failed",error)
         process.exit(1);
     }
     }

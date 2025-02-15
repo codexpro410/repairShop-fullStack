@@ -61,7 +61,7 @@ export default function Home() {
                     alt={product.name}
                     width={200}
                     height={200}
-                    className="mx-auto object-cover rounded-lg"
+                    className="w-full h-[200px] mx-auto object-cover rounded-lg"
                   />
                 </CardHeader>
                 <CardContent>

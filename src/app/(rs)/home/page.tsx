@@ -7,10 +7,10 @@ import { Button } from "@/app/components/ui/button";
 import { MapPin, Phone, Mail, Clock } from "lucide-react"
 import { Card, CardContent, CardHeader, CardTitle } from "@/app/components/ui/card";
 const featuredProducts = [
-  { id: 1, name: "Gaming PC", price: "$1299", image: "/images/pc.webp" },
-  { id: 2, name: "Ultra-thin Laptop", price: "$999", image: "/images/labtop.jpg" },
-  { id: 3, name: "4K Monitor", price: "$499", image: "/images/monitor.png" },
-  { id: 4, name: "Mechanical Keyboard", price: "$129", image: "/images/keyboard.jpg" },
+  { id: 1, name: "Gaming PC", price: "$1299.00", image: "/images/pc.webp" },
+  { id: 2, name: "Ultra-thin Laptop", price: "$999.00", image: "/images/labtop.jpg" },
+  { id: 3, name: "4K Monitor", price: "$499.00", image: "/images/monitor.png" },
+  { id: 4, name: "Mechanical Keyboard", price: "$129.00", image: "/images/keyboard.jpg" },
 ]
 
 const services = [
@@ -39,7 +39,7 @@ export default function Home() {
             <Link href="/customers">Search Customers</Link>
           </Button>
           <Button asChild>
-            <Link href="/tickets">Create New Ticket</Link>
+            <Link href="/tickets">Show Tickets</Link>
           </Button>
           <Button asChild>
             <Link href="/customers/form">Create New Customer</Link>
@@ -61,7 +61,7 @@ export default function Home() {
                     alt={product.name}
                     width={200}
                     height={200}
-                    className="mx-auto"
+                    className="mx-auto object-cover rounded-lg"
                   />
                 </CardHeader>
                 <CardContent>
